@@ -1,0 +1,67 @@
+1. In design Heuristics, what does the term “advantages of Matching between system and the real world” mean? What are the advantages?
+
+The term “advantages of matching between system and the real world" refers to the principle that a system's design and interface should align with the user's mental model and expectations of how the real world operates. This concept is based on Norman's Design Principles, particularly the idea of making the system's operation and interface intuitive and familiar to users. Some of the advantages being:
+
+User familiarity for instance when the system's design mirrors the real-world concepts and operations familiar to users, it reduces the learning curve. For example, if you're designing a file management system, using folder and file icons, similar to physical file cabinets, would align with the user's real-world experience.
+
+Another advantage being error prevention becase when systems behave in a way that aligns with the user's expectations, it reduces the likelihood of errors and mistakes. For instance if a form follows a familiar format with clear labels and validation messages, users are less likely to make data entry errors.
+
+An additional advantage is that it provides more efficiency and productivity as a system that matches the real world allows users to accomplish tasks more efficiently, as they can leverage existing knowledge and skills. For example, a word processing application using familiar formatting options (bold, italic) similar to a real document helps users create content more efficiently.
+
+Another advantage worth mentioning of matching between system and the real world is less cognitive load as users can more easily understand and interact with a system when its elements and actions resemble real-world objects and behaviours, minimising the cognitive load. An example being that using a trash can icon for deleting files is a real-world metaphor that reduces the cognitive effort needed to understand the action.
+
+Overall, these advanges show that in matching between system and the real world in design heuristics center around creating user interfaces and interactions that are intuitive, familiar, and aligned with users' pre-existing mental models, ultimately leading to a more positive and efficient user experience.
+
+
+2. What do you understand by “Single source of truth”? and how does it relate to redux? What are the advantages ?
+
+From what I understand from "Single Source of Truth" is that it refers to the practice of structuring data and application state in a way that ensures there is only one authoritative source for a particular piece of information within a system. This principle is crucial for maintaining consistency and avoiding data discrepancies across different parts of an application. Also, the Single Source of Truth principle, when applied in conjunction with Redux, provides a structured and efficient way to manage application state, ensuring consistency, predictability, and ease of debugging in software development.
+
+Single source of truth relates to Redux beacuse Redux enforces a centralised and predictable approach to managing the state of an application. In a Redux-based architecture, the entire state of the application is stored in a single JavaScript object, called the "store.” Some advantages of single source truth is one being that it offers consistency as with a single source truth there is a consistent and unified view of the application state. For example, if a component needs to display a list of todos, it can always rely on the state from the Redux store.
+
+Another advantage is predictability as changes to the state are controlled through actions and reducers, providing a predictable and traceable flow of data. For instance, developers can easily trace how the to-do list state changes in response to different actions dispatched to the Redux store.
+
+An additional advantage is the undo/redo functionality since single source of truth  facilitates implementing undo/redo functionality as the entire state history is available in the Redux store. For example, users can undo the completion of a to-do item by reverting the state to its previous state.
+
+
+3. What is the difference between a stateless component and a stateful component in React?
+
+the key difference between stateless and stateful components in React lies in their ability to manage and update internal state. Stateless components focus on rendering UI based on props, while stateful components can manage their own state, making them suitable for dynamic behavior and data manipulation. The choice between them depends on the specific requirements of the component and the application.
+
+More specifically, a stateless component is a type of React component that doesn't manage its own state. It receives data through props and renders UI based on those props. Some characteristics of a stateless component is that there is no internal state management, they’re typically used for presentational components that focus on rendering UI based on input props and simpler and more concise syntax using functional components and an advantage is that it offers performance benefits as they don't have lifecycle methods or internal state.
+
+On the other hand, a stateful component is a type of React component that can manage its own internal state. It can hold and update data, re-rendering itself when the state changes. They also can have lifecycle methods for more control over component behaviour and are typically used for components that require dynamic behaviour or data. An advantge is that it has the ability to manage and update local state.
+
+
+4. List out the advantages and disadvantages of exploratory testing (used in Agile) and scripted testing?
+
+Exploratory testing advatages:
+
+- The adaptability to change as exploratory testing allows testers to quickly adapt to changes without waiting for predefined test cases.
+- Early bug discovery as exploratory testing can start early in the development process, helping identify critical issues before they become deeply embedded in the code.
+- Maximised tester creativity because testers use their experience and creativity to explore different aspects of the application, potentially discovering scenarios that scripted tests might not cover.
+- Better efficient use of time as testers can focus on critical areas and features, optimising testing efforts based on the evolving understanding of the application
+- Enhanced collaboration because collaboration between testers, developers, and stakeholders is fostered as testing becomes an ongoing and collaborative activity.
+
+Exploratory testing disadvantages:
+
+- Lack of documentation as the informal nature of exploratory testing may result in a lack of well-documented test cases, making it challenging to reproduce specific scenarios.
+- Varied test coverage as coverage of exploratory testing can be inconsistent, as it relies on testers' skills and intuition.
+- Limited reusability because soem test scenarios identified during exploratory testing might not be easily reusable for future releases or regression testing.
+- Dependence on tester skills could be a disadvantge as the effectiveness of exploratory testing heavily relies on the skills and domain knowledge of individual testers.
+
+Scripted Testing Advantages: 
+
+- Reproducibility as scripted tests are predefined, ensuring that tests can be easily reproduced for consistent results.
+- Clear documentation because scripted testing provides clear and documented test cases, facilitating traceability and knowledge transfer.
+- Consistency across testers as different testers can execute the same set of tests consistently, ensuring uniform test coverage.
+- Automation potential due to the fact that scripted tests can be automated, increasing testing efficiency and repeatability.
+- Comprehensive Test Coverage is another advanatge as predefined test cases help ensure comprehensive coverage of various scenarios.
+
+Scripted Testing disadvantages: 
+
+- Rigidity to changes as scripted tests may become outdated and rigid in the face of frequent changes in the application.
+- Late start in testing could be a disadvatge as testing may begin later in the development process as scripted tests often require complete or near-complete features.
+- Limited adaptability in scripted tests may miss certain scenarios that were not anticipated during the test planning phase.
+- Resource-intensive maintenance can be a disadvantage as maintaining a large amoubt of scripted tests can be resource-intensive, especially when the application evolves and gets bigger and bigger
+- Scripted tests are not well-suited for exploratory testing, which requires flexibility and adaptability.
